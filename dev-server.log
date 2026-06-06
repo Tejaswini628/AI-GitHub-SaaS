@@ -1,0 +1,49 @@
+
+> ai-github-saas@1.0.0 dev
+> set "NODE_OPTIONS=--use-system-ca" && next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 3.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 12.1s (580 modules)
+ GET / 200 in 13313ms
+ ✓ Compiled in 1312ms (298 modules)
+ ✓ Compiled in 252ms (284 modules)
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 6.9s (312 modules)
+ ✓ Compiled in 1740ms (314 modules)
+ GET /api/github/status 200 in 9143ms
+ GET /api/github/status 200 in 51ms
+ ○ Compiling /api/github/repos ...
+ ✓ Compiled /api/github/repos in 3.4s (569 modules)
+ ✓ Compiled /api/auth/callback in 388ms (571 modules)
+ GET /api/auth/callback?code=e8993f2c-d772-4f30-ad87-26bf9fb30754 307 in 12314ms
+ GET /dashboard 200 in 330ms
+ GET /api/github/repos 200 in 17154ms
+ GET /api/github/repos 200 in 11605ms
+ ○ Compiling /api/tasks ...
+ ✓ Compiled /api/tasks in 674ms (573 modules)
+ GET /api/tasks?repoId=1255740004 500 in 10498ms
+ GET /api/tasks?repoId=1255740004 500 in 5236ms
+ ○ Compiling /api/ai/generate ...
+ GET /api/github/repos 200 in 22063ms
+ ✓ Compiled /api/ai/generate in 851ms (577 modules)
+ POST /api/ai/generate 200 in 6219ms
+ POST /api/ai/generate 400 in 19712ms
+ ○ Compiling /history ...
+ ✓ Compiled /history in 1316ms (885 modules)
+ ✓ Compiled /api/tasks in 325ms (571 modules)
+ ○ Compiling /api/github/repos ...
+ ✓ Compiled /api/github/repos in 658ms (573 modules)
+ GET /api/tasks 200 in 2698ms
+ GET /api/tasks 200 in 1297ms
+ GET /api/tasks 200 in 1631ms
+ GET /api/tasks 200 in 1033ms
+ GET /api/github/repos 200 in 7525ms
+ GET /api/github/repos 200 in 17535ms
+ GET /api/github/repos 200 in 7524ms
+ GET /api/github/repos 200 in 6097ms

@@ -1,0 +1,16 @@
+{
+  "name": "AI GitHub Developer",
+  "short_name": "AI GitHub Dev",
+  "description": "Your AI junior developer that understands code and ships features",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-950 antialiased;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary-100 text-primary-950;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-slate-950/15 transition-all hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-lg hover:shadow-slate-950/15 disabled:translate-y-0 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white/90 px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm shadow-slate-900/5 transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white hover:text-slate-950 hover:shadow-md disabled:translate-y-0 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .card {
+    @apply rounded-lg border border-slate-200/80 bg-white/95 p-5 shadow-sm shadow-slate-950/[0.04] backdrop-blur;
+  }
+
+  .input-field {
+    @apply w-full rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-slate-950 placeholder-slate-400 outline-none transition focus:border-primary-500 focus:ring-4 focus:ring-primary-100;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply badge bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200;
+  }
+
+  .badge-warning {
+    @apply badge bg-amber-50 text-amber-700 ring-1 ring-amber-200;
+  }
+
+  .badge-error {
+    @apply badge bg-rose-50 text-rose-700 ring-1 ring-rose-200;
+  }
+
+  .badge-info {
+    @apply badge bg-sky-50 text-sky-700 ring-1 ring-sky-200;
+  }
+
+  .page-shell {
+    @apply min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.13),transparent_30rem),radial-gradient(circle_at_80%_0%,rgba(16,185,129,0.10),transparent_26rem),linear-gradient(180deg,#f8fafc_0%,#eef2f7_100%)];
+  }
+
+  .panel-header {
+    @apply flex items-center justify-between border-b border-slate-200/80 pb-4;
+  }
+
+  .icon-tile {
+    @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-sm font-semibold text-slate-600 shadow-sm shadow-slate-950/[0.03];
+  }
+
+  .empty-state {
+    @apply flex flex-col items-center justify-center rounded-lg border border-dashed border-slate-300 bg-slate-50/70 px-6 py-14 text-center;
+  }
+}
+
+@layer utilities {
+  .hl-keyword { color: #ff79c6; }
+  .hl-string { color: #f1fa8c; }
+  .hl-number { color: #bd93f9; }
+  .hl-comment { color: #6272a4; font-style: italic; }
+  .hl-operator { color: #ff79c6; }
+}
